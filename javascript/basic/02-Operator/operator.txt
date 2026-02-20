@@ -1,0 +1,145 @@
+# Operator (Javascript Fundamentals)
+
+Operator adalah simbol yang digunakan untuk melakukan operasi
+terhadap nilai (operand) di dalam JavaScript. Operator menjadi
+fondasi utama dalam proses perhitungan, pengambilan keputusan,
+dan pengendalian alur program.
+
+Hampir seluruh logika program — mulai dari validasi kondisi,
+manipulasi nilai, hingga control flow — bergantung pada penggunaan
+operator yang tepat.
+
+Fokus materi:
+- Arithmetic operators
+- Assignment operators
+- Comparison operators
+- Logical operators
+- Unary operators
+- String operations
+- Operator precedence
+
+# Operator (Javascript Fundamentals)
+
+Operator adalah simbol yang digunakan untuk melakukan operasi terhadap
+nilai (operand) di dalam JavaScript. Operator memungkinkan program
+melakukan perhitungan, membandingkan nilai, memvalidasi kondisi,
+serta menentukan alur eksekusi program.
+
+Secara sederhana, operator adalah alat utama yang digunakan JavaScript
+untuk memproses data dan menghasilkan nilai baru. Hampir semua logika
+program — mulai dari perhitungan sederhana hingga validasi kompleks —
+bergantung pada penggunaan operator.
+
+Setiap operasi memiliki bentuk dasar:
+
+operand + operator → menghasilkan nilai baru
+
+Contoh:
+5 + 3
+
+5 dan 3 adalah operand, sedangkan `+` adalah operator.
+
+
+--------------------------------------------------
+JENIS OPERATOR DI JAVASCRIPT
+--------------------------------------------------
+
+## 1. Arithmetic Operator (Operator Aritmatika)
+
+Digunakan untuk melakukan operasi matematika pada angka.
+
++  → penjumlahan  
+-  → pengurangan  
+*  → perkalian  
+/  → pembagian  
+%  → sisa bagi (modulus)  
+** → perpangkatan  
+
+Contoh:
+```js
+let a = 10;
+let b = 3;
+
+console.log(a + b); // 13
+console.log(a % b); // 1
+console.log(2 ** 3); // 8
+
+2. Assignment Operator (Operator Penugasan)
+
+Digunakan untuk memberikan atau memperbarui nilai variabel.
+
+= → assign nilai
++= → x = x + nilai
+-= → x = x - nilai
+*= → x = x * nilai
+/= → x = x / nilai
+%= → x = x % nilai
+
+Contoh:
+let saldo = 100;
+saldo += 50; // 150
+saldo *= 2;  // 300
+
+3. Comparison Operator (Operator Perbandingan)
+
+Digunakan untuk membandingkan dua nilai.
+Hasilnya selalu boolean (true atau false).
+
+== → sama nilai (tanpa cek tipe)
+=== → sama nilai dan tipe (disarankan)
+!= → tidak sama nilai
+!== → tidak sama nilai dan tipe
+
+→ lebih besar
+< → lebih kecil
+= → lebih besar sama dengan
+<= → lebih kecil sama dengan
+
+console.log(5 == "5");  // true
+console.log(5 === "5"); // false
+console.log(10 > 3);    // true
+
+4. Logical Operator (Operator Logika)
+
+Digunakan untuk menggabungkan beberapa kondisi boolean.
+
+&& → AND (semua kondisi harus true)
+|| → OR (minimal satu true)
+! → NOT (membalik nilai)
+
+let login = true;
+let verified = false;
+
+console.log(login && verified); // false
+console.log(login || verified); // true
+console.log(!login);            // false
+
+Logical operator sering digunakan dalam validasi dan control flow.
+
+5. Unary Operator
+Unary operator bekerja hanya pada satu operand.
+
+typeof → mengecek tipe data
+++ → increment (menambah 1)
+-- → decrement (mengurangi 1)
+
+Contoh:
+
+let x = 5;
+x++;
+console.log(x); // 6
+console.log(typeof x); // number
+Perbedaan increment:
+x++ // postfix (dipakai dulu, baru tambah)
+++x // prefix (tambah dulu, baru dipakai)
+
+Kesimpulan
+Operator adalah fondasi utama dalam JavaScript karena digunakan untuk:
+melakukan perhitungan (arithmetic)
+memperbarui nilai (assignment)
+membandingkan data (comparison)
+menggabungkan kondisi (logical)
+memanipulasi satu nilai (unary)
+menggabungkan teks (string operator)
+Memahami operator berarti memahami bagaimana JavaScript
+mengevaluasi ekspresi dan menghasilkan keputusan dalam program.
